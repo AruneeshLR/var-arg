@@ -1,0 +1,17 @@
+interface Father{
+    public void property();
+}
+interface Mother{
+    public void property();
+}
+class Child implements Father,Mother{
+    public void property(){
+        System.out.println("Cash+Gold");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Child c = new Child();
+        c.property();
+    }
+}   // In this I have learn Java does not support multiple inheritance with classes, but it supports multiple inheritance through interfaces.
