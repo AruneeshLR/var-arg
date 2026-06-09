@@ -1,0 +1,22 @@
+class Contact {
+
+    static void saveContact(String name, long... phoneNumbers) {
+        System.out.println("Name: " + name);
+
+        System.out.println("Phone Numbers:");
+        for (long num : phoneNumbers) {
+            System.out.println(num);
+        }
+
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
+        saveContact("Arun", 9876543210L);
+
+        saveContact("Kumar", 9123456789L, 9876501234L);
+
+        saveContact("Priya", 9876543210L, 9123456789L, 9012345678L);
+    }
+}   // I have done real time code for name and phone numbers
