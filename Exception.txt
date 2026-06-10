@@ -1,0 +1,20 @@
+public class Main
+{
+    public static void dostuff(){
+        
+        System.out.println("dostuff start");
+        domorestuff();
+        System.out.println("dostuff end");
+    
+    }
+    public static void domorestuff(){
+        
+        System.out.println(10/0);
+    }
+    
+    public static void main(String[] args){
+        dostuff();
+    }
+}
+
+//When 10/0 is executed, Java throws an ArithmeticException and immediately stops the normal flow of the program. Since the exception is not handled, control never returns to dostuff(), so "dostuff end" is not executed.
