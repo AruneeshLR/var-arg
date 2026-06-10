@@ -1,0 +1,17 @@
+class Rooms{
+    Rooms(){
+        System.out.println("Kitchen,Hall,Bedroom");
+    }
+}
+class House{
+    private Rooms r;
+    House(){
+        r=new Rooms();
+    }
+}
+public class Main
+{
+    public static void main(String[] args){
+        House h1=new House();
+    }
+}  // I have learnt that in composition contained object cant exist without container object "has a" realtionship
