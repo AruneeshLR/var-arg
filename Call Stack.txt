@@ -1,0 +1,20 @@
+class FoodApp {
+
+    static void placeOrder() {
+        checkRestaurant();
+        System.out.println("Order Placed");
+    }
+
+    static void checkRestaurant() {
+        prepareFood();
+        System.out.println("Restaurant Accepted");
+    }
+
+    static void prepareFood() {
+        System.out.println("Food Prepared");
+    }
+
+    public static void main(String[] args) {
+        placeOrder();
+    }
+} // Call stack when a method is called, it is pushed onto the stack, and when it finishes execution, it is popped from the stack. It follows the Last In, First Out (LIFO) principle.

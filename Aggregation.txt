@@ -1,0 +1,23 @@
+class Trainer{
+    String name;
+    Trainer(String name){
+        this.name=name;
+    }
+}
+class College{
+    private Trainer t;
+    College(Trainer t){
+        this.t=t;
+    }
+    void display(){
+        System.out.println(t.name);
+    }
+}
+public class Main
+{
+    public static void main(String[] args){
+        Trainer t=new Trainer("Sri");
+        College c=new College(t);
+        c.display();
+    }
+}  //In aggregation container object exists independently which weak has a relationship
